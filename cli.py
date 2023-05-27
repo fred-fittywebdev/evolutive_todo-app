@@ -9,7 +9,7 @@ while True:
     user_action = user_action.strip().lower()
 
     if user_action.startswith('add'):
-        todo = user_action[4:] + '\n'  # With the slice we retrieve only the words after 'add', so the todo only
+        todo = user_action[4:] + '\n'  # With the slice we retrieve only the words after 'add', so the todos only
 
         todos = get_todos()
 
@@ -21,7 +21,7 @@ while True:
         todos = get_todos()
 
         # we do a list comprehension to remove potentials multiples \n
-        # new_todos = [todo.strip("\n") for todo in todos]
+        # new_todos = [todos.strip("\n") for todos in todos]
 
         for index, todo in enumerate(todos):
             row = f"{index + 1}-{todo.strip()}"
