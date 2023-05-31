@@ -1,0 +1,1 @@
+Check pyinstaller executable work
